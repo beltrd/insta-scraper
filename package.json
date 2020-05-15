@@ -1,0 +1,25 @@
+{
+  "name": "insta-scraper",
+  "version": "1.0.0",
+  "description": "Instagram data scraper using node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beltrd/insta-scraper.git"
+  },
+  "author": "Diego Beltran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beltrd/insta-scraper/issues"
+  },
+  "homepage": "https://github.com/beltrd/insta-scraper#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
