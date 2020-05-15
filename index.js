@@ -13,4 +13,14 @@ const scrapeImages = async (username) => {
     await page.type('[name="username"]', process.env.INSTA_USERNAME);
     await page.type('[name="password"]', process.env.INSTA_PASSWORD);
     await page.click('[type=submit]');
+    await page.waitFor(3000);
+    await page.goto(`https://www.instagram.com/${username}`);
+    await page.waitFor(5000);
+
+    const data = await page.evaluate(() => {
+        window.scrollBy(0, window.innerHeight);
+        const images = document.querySelectorAll('img.FFVAD');
+        const urls = Array.from(images).map(v => v.src);
+        return urls;
+    });
 }
