@@ -22,7 +22,8 @@
     "fs": "0.0.1-security",
     "get-urls": "^9.2.0",
     "node-fetch": "^2.6.0",
-    "puppeteer": "^3.0.4"
+    "puppeteer": "^3.0.4",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
